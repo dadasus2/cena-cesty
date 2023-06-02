@@ -6,13 +6,21 @@ function Vypocitej() {
     let output = document.getElementById('output')
 
 
-
     perLiter = consumption / 100
     let price = perLiter * fuel * length
     price = Math.round(price)
 
-    //form.reset()
-    output.textContent += ` ${price} Kč`
+    if (output.textContent.includes(price)) {
+
+        output.textContent = `Cena vaší cesty je: ${price} Kč`
+    }
+
+    else {
+        output.textContent += ` ${price} Kč`
+
+    }
+
+
     return price
 
 }
