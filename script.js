@@ -12,13 +12,13 @@ function Vypocitej() {
     price = Math.round(price)
 
     //form.reset()
-    output.textContent += `${price} Kč`
+    output.textContent += ` ${price} Kč`
     return price
 
 }
 
 function Smaz() {
     let form = document.getElementById('form')
-    output.textContent = "Cena vaší cesty je:"
+    output.textContent = "Cena vaší cesty je: "
     form.reset()
 }
