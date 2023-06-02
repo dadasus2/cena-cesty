@@ -1,0 +1,46 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <form id="form" action="#">
+            <div class="box">
+                <span>Délka cesty (Km)</span>
+                <input type="number" id="length">
+                <br>
+            </div>
+            <div class="box">
+                <span>Průměrná spotřeba auta (L/100Km)</span>
+                <input type="number" id="consumption">
+                <br>
+            </div>
+            <div class="box">
+                <span>Cena benzinu/nafty (Kč)</span>
+                <input type="number" id="fuel">
+                <br>
+            </div>
+            <div class="box">
+                <button onclick="Vypocitej()" id="calculate">Vypočítat</button>
+                <button onclick="Smaz()" id="delete">Smazat</button>
+
+            </div>
+        </form>
+
+        <div class="output">
+            <h1 id="output">Cena vaší cesty je: </h1>
+        </div>
+
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
